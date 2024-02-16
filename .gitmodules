@@ -1,0 +1,3 @@
+[submodule "themes/pico"]
+	path = themes/pico
+	url = https://github.com/caju-rocks/pico-oquereluz.git
