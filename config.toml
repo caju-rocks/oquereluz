@@ -1,16 +1,16 @@
 # Use an empty string if you have multiple domain linking to your website
 # This string is used to generate the absolute URL for your assets.
 #baseURL = 'https://example.com/'
-defaultContentLanguage = 'en'
+defaultContentLanguage = 'pt-br'
 # Emoji in markdown files
 enableEmoji = true
-languageCode = 'en-us'
+languageCode = 'pt-br'
 # Number of blog post per page
 paginate = 10
 theme = 'pico'
 # Title of the website is used for the meta tag title
 # and the square icon (not the favicon)
-title = 'Pico'
+title = 'o que reluz'
 
 [params]
 customCSS = [
@@ -21,43 +21,22 @@ customJS = ["js/console.js"] # Path relative to assets folder
 # Homepage description
 # For blog page description you can overwrite it 
 # in the front matter
-description = "Boilerplate website"
-email = "mail@example.com"
+description = "Uma pequena descrição do site"
+email = "julialopesss@gmail.com"
 favicon = '/favicon.ico'
 # Dark mode support
 # Supported value are :
 # - off
 # - always
 # If commented the theme will use the browser theme.
-# darkMode = 'always'
+darkMode = 'off'
 
 # Social parameters for contact_icons widget
 [[params.social]]
 alt = "email icon"
 icon = "/icons/email.svg"
 name = "email"
-url = "mailto:mail@example.com"
-
-[[params.social]]
-alt = "github icon"
-blank = true
-icon = "/icons/github.svg"
-name = "github"
-url = "https://github.com/"
-
-[[params.social]]
-alt = "medium icon"
-blank = true
-icon = "/icons/medium.svg"
-name = "medium"
-url = "https://medium.com/"
-
-[[params.social]]
-alt = "stack-overflow icon"
-blank = true
-icon = "/icons/stack-overflow.svg"
-name = "stack-overflow"
-url = "https://stackoverflow.com/"
+url = "mailto:julialopesss@gmail.com"
 
 [[params.social]]
 alt = "twitter icon"
@@ -65,13 +44,6 @@ blank = true
 icon = "/icons/twitter.svg"
 name = "twitter"
 url = "https://twitter.com/"
-
-[[params.social]]
-alt = "facebook icon"
-blank = true
-icon = "/icons/facebook.svg"
-name = "facebook"
-url = "https://facebook.com/"
 
 # Navigation bar
 [menu]
@@ -108,17 +80,23 @@ tag = "tags"
 # Translation
 # English, French and Italian are supported but you can contribute
 # by adding translation to i18n/ folder.
-[languages.en]
-contentDir = 'content/en'
-languageCode = 'en'
-languageName = 'English'
+[languages.pt-br]
+contentDir = 'content/pt-br'
+languageCode = 'pt-br'
+languageName = 'Português'
 weight = 0
 
-[languages.fr]
-contentDir = 'content/fr'
-languageCode = 'fr'
-languageName = 'Français'
-weight = 2
+#[languages.en]
+#contentDir = 'content/en'
+#languageCode = 'en'
+#languageName = 'English'
+#weight = 0
+
+#[languages.fr]
+#contentDir = 'content/fr'
+#languageCode = 'fr'
+#languageName = 'Français'
+#weight = 2
 
 # Uncomment the following lines to add an italian translation.
 # [languages.it]
