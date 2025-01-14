@@ -1,0 +1,9 @@
+baseURL: https://oquereluz.netlify.app/
+languageCode: "pt-BR"
+title: o que reluz
+theme: oquereluz
+
+pagination:
+  pagerSize: 3
+  path: page
+#path: blog

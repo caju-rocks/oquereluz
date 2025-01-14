@@ -1,0 +1,18 @@
+{{ define "main" }}
+
+{{ partial "home/hero.html" . }}
+
+{{ with site.GetPage "section" "servicos" }}
+  {{ partial "home/services.html" . }}
+{{ end }}
+
+{{ with site.GetPage "section" "about-me" }}
+  {{ partial "home/about-me.html" . }}
+{{ end }}
+
+{{ partial "home/blog.html" . }}
+
+{{ partial "home/contact.html" . }}
+{{ partial "home/newsletter.html" . }}
+
+{{ end }}

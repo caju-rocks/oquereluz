@@ -1,0 +1,21 @@
+<section id="sobre-mim" class="hero is-oquereluz-amarelo">
+  <div class="hero-body">
+    <div class="container">
+      <div class="columns">
+        <div class="column is-one-quarter is-flex is-align-items-center">
+          <h1 class="title is-size-1">{{ lower .Title }}</h1>
+        </div> <!-- column -->
+        <div class="column is-two-fifths sobre-mim">
+          <div class="content is-shadowless">
+            <p>{{ .Content }}</p>
+            <p>{{ .Date }}
+            <p>{{ .Params.description }}</p>
+          </div>
+        </div>
+        <div class="column foto-sobre-mim is-flex is-align-items-right">
+          <img src="https://placehold.co/590x420">
+        </div>
+      </div> <!-- columns -->
+    </div>
+  </div>
+</section>

@@ -1,0 +1,27 @@
+<section id="servicos" class="hero is-oquereluz-marrom">
+  <div class="hero-body">
+    <div class="container">
+      <div class="columns">
+        <div class="column is-one-quarter is-flex is-align-items-center">
+          <h1 class="title is-size-1">{{ lower .Title }}</h1>
+        </div> <!-- column -->
+        <div class="column servicos">
+          <ul>
+            {{ range $index, $element := .Params.services }}
+            <li>
+              <div class="columns mb-5 servico">
+                <div class="column is-flex is-align-items-center">
+                  <h4 class="is-size-4"><span>{{ add $index 1 }}.</span> {{ $element.name }}</h4>
+                </div>
+                <div class="column">
+                  <p class="has-text-weight-semibold has-text-justified">{{ $element.description }}</p>
+                </div>
+              </div>
+            </li>
+          {{ end }}
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

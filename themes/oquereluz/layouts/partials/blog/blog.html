@@ -1,0 +1,59 @@
+<section class="section has-background-areia">
+  <div class="">
+    <div class="container">
+      <div class="columns">
+        <div class="column">
+          <div class="content">
+            <h1 class="title is-size-1">{{ lower .Title }}</h1>
+          </div>
+          <!-- content -->
+        </div>
+        <!-- column -->
+      </div>
+      <!-- columns -->
+    </div>
+    <!-- container -->
+
+    <div class="container px-5">
+      {{ $index := 0}} {{ range (.Paginate .Pages).Pages }}
+      <div class="columns">
+        <div class="column">
+          <div
+            class="card has-background-inherit is-shadowless is-radiusless is-flex is-align-items-stretch blog-post"
+            style="height: 100%"
+          >
+            <div
+              class="card-content is-shadowless m-0 p-0"
+              style="flex-grow: 1"
+            >
+              <img src="https://picsum.photos/1920/400/?random={{ $index }}" />
+              <h4 class="is-size-4 mb-2">
+                <a
+                  class="has-text-marrom has-text-weight-bold"
+                  href="{{ .RelPermalink }}"
+                  >{{ .LinkTitle }}</a
+                >
+              </h4>
+              <span class="is-size-7 has-text-marrom"
+                >{{ .Date | time.Format ":date_full" | upper }}</span
+              >
+              <div class="content has-text-marrom">
+                <p>{{ .Summary }}</p>
+              </div>
+              <!-- content-->
+            </div>
+            <!-- card-content -->
+          </div>
+          <!-- card -->
+        </div>
+        <!-- column -->
+      </div>
+      <!-- columns -->
+      {{ $index = add $index 1 }} {{ end }}
+
+      <!-- paginacao -->
+      {{ partial "pagination.html" . }}
+    </div>
+    <!-- container -->
+  </div>
+</section>

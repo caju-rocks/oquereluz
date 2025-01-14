@@ -1,0 +1,47 @@
+<section class="hero is-oquereluz-marinho">
+  <div class="hero-body">
+    <div class="container">
+      <div class="columns">
+        <div class="column is-one-quarter is-flex is-align-items-center">
+          <h1 class="title is-size-1">blog</h1>
+        </div>
+        <div class="column is-narrow is-flex is-align-items-center">
+          <div class="go-back">
+            <span class="icon">
+              <i class="fas fa-chevron-left"></i>
+            </span>
+          </div>
+        </div>
+        {{ range site.RegularPages }}
+        <div class="column blog">
+          <div class="card is-radiusless has-background-marinho is-flex is-flex-direction-column is-align-items-stretch" style="height: 100%;">
+            <div class="card-content is-shadowless" style="flex-grow: 1;">
+              <header class="mb-2">
+                <h2 class="mb-2"><a class="has-text-areia has-text-weight-bold" href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
+                <span class="is-size-7">{{ .Date | time.Format ":date_full" | upper }}</span>
+              </header>
+              <div class="content">
+                {{ if gt (len .Summary) 200 }}
+                  <p>{{ slicestr .Summary 3 200 }}...</p>
+                {{ else }}
+                  <p>{{ .Summary }}</p>
+                {{ end }}
+              </div>
+            </div> <!-- card-content -->
+            <div class="card-footer" style="border-top: 0;">
+              <a class="button is-rounded has-background-areia has-text-marinho" href="{{ .RelPermalink }}">leia mais</a>
+            </div>
+          </div> <!-- card -->
+        </div> <!-- column -->
+        {{ end }}
+        <div class="column is-narrow is-flex is-align-items-center">
+          <div class="go-forward">
+            <span class="icon">
+              <i class="fas fa-chevron-right"></i>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

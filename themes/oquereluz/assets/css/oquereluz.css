@@ -1,0 +1,276 @@
+:root {
+  --fira-font-family: "Fira Sans", sans-serif;
+  --work-font-family: "Work Sans", sans-serif;
+  --vermelho: #af3c17;
+  --marrom: #4c2c1d;
+  --areia: #e4d6b9;
+  --marinho: #2e2c39;
+  --amarelo: #dfc106;
+
+  --bulma-card-footer-padding: 1.5rem;
+}
+
+a,
+label,
+ul,
+ol,
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--fira-font-family);
+  font-weight: 300;
+  font-style: normal;
+}
+
+p,
+input,
+span,
+textarea,
+.content {
+  font-family: var(--work-font-family);
+  font-weight: 300;
+  font-style: normal;
+}
+
+. has-text-weight-semibold {
+  font-weight: 700;
+}
+
+.is-size-special {
+  font-size: 5rem;
+  line-height: 0.95em;
+}
+
+.has-font-fira {
+  font-family: var(--fira-font-family);
+  font-weight: 300;
+  font-style: normal;
+}
+
+.has-font-work has-border-bottom {
+  font-family: var(--work-font-family);
+  font-weight: 500;
+  font-style: normal;
+}
+
+.footer-menu a {
+  color: var(--areia);
+}
+
+.newsletter div.card {
+  border: 1px solid var(--areia);
+  border-radius: 3rem;
+  color: var(--areia);
+}
+
+.newsletter div.card-content {
+  padding: 6px;
+}
+
+input.newsletter,
+input.newsletter::placeholder {
+  border: none;
+  color: var(--areia);
+}
+
+input.newsletter:focus {
+  box-shadow: none;
+}
+
+.hero .title,
+.hero .subtitle {
+  font-family: var(--fira-font-family);
+  font-weight: 400;
+}
+
+.is-oquereluz-vermelho {
+  background-color: var(--vermelho);
+  color: var(--areia);
+}
+
+.is-oquereluz-vermelho .title,
+.is-oquereluz-vermelho .subtitle {
+  color: var(--areia);
+}
+
+.is-oquereluz-marrom {
+  background-color: var(--marrom);
+  color: var(--areia);
+}
+
+.is-oquereluz-marrom .title,
+.hero.is-oquereluz-marrom .subtitle {
+  color: var(--areia);
+}
+
+.is-oquereluz-areia {
+  background-color: var(--areia);
+  color: var(--marrom);
+}
+
+.is-oquereluz-areia .title,
+.is-oquereluz-areia .subtitle {
+  color: var(--marrom);
+}
+
+.is-oquereluz-marinho {
+  background-color: var(--marinho);
+  color: var(--areia);
+}
+
+.is-oquereluz-marinho .title,
+.is-oquereluz-marinho .subtitle {
+  color: var(--areia);
+}
+
+.is-oquereluz-amarelo {
+  background-color: var(--amarelo);
+  color: var(--marrom);
+}
+
+.is-oquereluz-amarelo .title,
+.is-oquereluz-amarelo .subtitle {
+  color: var(--marrom);
+}
+
+.has-text-marinho {
+  color: var(--marinho);
+}
+
+.has-text-marrom {
+  color: var(--marrom);
+}
+
+.has-text-areia {
+  color: var(--areia);
+}
+
+.has-background-areia {
+  background-color: var(--areia);
+}
+
+.has-background-marinho {
+  background-color: var(--marinho);
+}
+
+.has-background-marrom {
+  background-color: var(--marrom);
+}
+
+.is-oquereluz-transparent {
+  background-color: transparent;
+  border: none;
+}
+
+/* navbar-principal */
+#navbar-principal .navbar-item:hover {
+  background-color: transparent;
+}
+
+.navbar-burger {
+  color: var(--areia);
+}
+
+/* newsletter */
+.field.has-addons {
+  justify-content: center;
+}
+
+/* contact */
+label.contato {
+  color: var(--marrom);
+}
+input.contato,
+textarea.contato {
+  border-bottom: 2px solid var(--marrom);
+  border-radius: 0;
+  box-shadow: none;
+}
+
+input.contato:focus,
+textarea.contato:focus {
+  border-bottom: 2px solid var(--marrom);
+  box-shadow: none;
+}
+
+.contato-info ul {
+  margin-bottom: 20px;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* about-me */
+
+.sobre-mim .box {
+  background-color: var(--amarelo);
+}
+.sobre-mim p {
+  color: var(--marrom);
+  font-weight: 400;
+  line-height: 2em;
+}
+
+/* blog */
+.blog div.card {
+  border: 1px solid var(--areia);
+  color: var(--areia);
+  transition: box-shadow 0.3s ease;
+}
+
+.blog div.card:hover {
+  box-shadow: 0px 0px 5px var(--areia);
+}
+
+.blog .card-footer {
+  padding-left: var(--bulma-card-content-padding);
+  padding-bottom: var(--bulma-card-content-padding);
+}
+
+.blog-post {
+  border-bottom: 1px solid var(--marrom);
+}
+
+/* services */
+.servico {
+  border-bottom: 1px solid var(--areia);
+}
+
+.servico p {
+  line-height: 1.8em;
+}
+
+/* shapes */
+/* Estilização básica */
+.shape-container {
+  width: 300px;
+  height: 300px;
+  background-color: #a52a2a; /* Cor de fundo similar ao da imagem */
+  position: relative;
+}
+
+.shape {
+  position: absolute;
+  width: 100%;
+  height: 50%;
+  border: 2px solid #f1e4d1; /* Cor da borda */
+  background-color: transparent;
+  box-sizing: border-box;
+}
+
+/* Forma superior */
+.shape-top {
+  top: 0;
+  clip-path: polygon(0% 0%, 100% 0%, 80% 60%, 20% 100%, 0% 80%);
+}
+
+/* Forma inferior */
+.shape-bottom {
+  bottom: 0;
+  clip-path: polygon(0% 20%, 20% 0%, 80% 40%, 100% 100%, 0% 100%);
+}
+
+/* page blog */
+.page-blog {
+  background-color: var(--areia);
+}

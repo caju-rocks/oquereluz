@@ -1,0 +1,40 @@
+{{- $color := "areia" -}}
+{{- if ne .Kind "home" -}}
+  {{ $color = "marinho" }}
+{{- end -}}
+<nav class="navbar is-transparent" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a class="" href="{{ .Site.BaseURL }}">
+      {{ partial (printf "logos/desktop-%s.html" $color) . }}
+      {{ partial "logos/mobile-areia.html" . }}
+    </a>
+
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbar-principal">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+
+  <div id="navbar-principal" class="navbar-menu">
+    <div class="navbar-end">
+      <a href="/" class="navbar-item is-size-5 mr-5 has-text-{{ $color }} has-text-weight-semibold">
+        HOME
+      </a>
+      <a href="#servicos" class="navbar-item is-size-5 mr-5 has-text-{{ $color }} has-text-weight-semibold">
+        SERVIÇOS
+      </a>
+      <a href="/blog" class="navbar-item is-size-5 mr-5 has-text-{{ $color }} has-text-weight-semibold">
+        BLOG
+      </a>
+      <a href="#sobre-mim" class="navbar-item is-size-5 mr-5 has-text-{{ $color }} has-text-weight-semibold">
+        SOBRE MIM
+      </a>
+      <a href="#contato" class="navbar-item is-size-5 has-text-{{ $color }} has-text-weight-semibold">
+        CONTATO
+      </a>
+    </div>
+  </div>
+</nav>
+
