@@ -6,20 +6,20 @@
           <h1 class="title is-size-1">contato</h1>
         </div>
         <div class="column is-half">
-          <form name="contact" netlify>
+          <form id="contact-form" name="contact" method="POST" data-netlify="true">
             <!-- Nome e Email na mesma linha -->
             <div class="field is-horizontal">
               <div class="field-body">
                 <div class="field">
                   <label class="label contato">nome</label>
                   <div class="control">
-                    <input class="input is-medium is-oquereluz-transparent contato" type="text" required>
+                    <input class="input is-medium is-oquereluz-transparent contato" name="nome" type="text" required>
                   </div>
                 </div>
                 <div class="field">
                   <label class="label contato">email</label>
                   <div class="control">
-                    <input class="input is-medium is-oquereluz-transparent contato" type="email" required>
+                    <input class="input is-medium is-oquereluz-transparent contato" name="email" type="email" required>
                   </div>
                 </div>
               </div>
@@ -27,7 +27,7 @@
             <div class="field">
               <label class="label contato">mensagem</label>
               <div class="control">
-                <textarea class="textarea is-medium is-oquereluz-transparent contato" required></textarea>
+                <textarea class="textarea is-medium is-oquereluz-transparent contato" name="mensagem" required></textarea>
               </div>
             </div>
             <div class="field">
