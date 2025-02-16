@@ -274,3 +274,8 @@ textarea.contato:focus {
 .page-blog {
   background-color: var(--areia);
 }
+
+/* helpers */
+.py-60 {
+  padding: 60px 0;
+}
