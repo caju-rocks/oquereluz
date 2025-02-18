@@ -12,7 +12,19 @@ document.addEventListener('DOMContentLoaded', () => {
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: new URLSearchParams(formData).toString()
     })
-      .then(() => console.log("Form successfully submitted"))
+      .then(() => {
+        console.log("Form successfully submitted");
+        const modal = document.querySelector("#modal-contact-form-success")
+        if (modal) {
+          modal.classList.add("is-active");
+          modal.addEventListener("click", event => {
+            if (event.target.classList.contains("modal-background") || 
+                event.target.classList.contains("modal-close")) {
+                modal.classList.remove("is-active");
+            }
+          });
+        }
+      })
       .catch(error => alert(error));
   };
 

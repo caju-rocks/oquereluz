@@ -58,11 +58,11 @@ textarea,
   color: var(--areia);
 }
 
-.newsletter div.card {
-  border: 1px solid var(--areia);
-  border-radius: 3rem;
-  color: var(--areia);
-}
+/* .newsletter div.card { */
+/*   border: 1px solid var(--areia); */
+/*   border-radius: 3rem; */
+/*   color: var(--areia); */
+/* } */
 
 .newsletter div.card-content {
   padding: 6px;
@@ -183,7 +183,7 @@ label.contato {
 }
 input.contato,
 textarea.contato {
-  border-bottom: 2px solid var(--marrom);
+  border-bottom: 1px solid var(--marrom);
   border-radius: 0;
   box-shadow: none;
 }
@@ -198,6 +198,16 @@ textarea.contato:focus {
   margin-bottom: 20px;
   font-weight: 400;
   font-style: normal;
+}
+
+/* modal contact form success */
+#modal-contact-form-success .box {
+  background-color: var(--amarelo);
+  color: var(--marrom);
+}
+
+#modal-contact-form-success .box h3.subtitle {
+  color: var(--marrom);
 }
 
 /* about-me */
