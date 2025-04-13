@@ -6,9 +6,10 @@
           <h1 class="title is-size-1">assine a newsletter</h1>
           <div class="card is-rounded has-background-areia">
             <div class="card-content">
+              <form id="newsletter-form" name="newsletter" method="POST" data-netlify="true">
               <div class="field is-grouped">
                 <div class="control is-expanded">
-                  <input class="input is-rounded is-oquereluz-areia newsletter" type="text" placeholder="email">
+                  <input class="input is-rounded is-oquereluz-areia newsletter" name="email" type="text" placeholder="email" required>
                 </div>
                 <div class="control">
                   <button class="button is-rounded is-oquereluz-marrom">
@@ -16,6 +17,7 @@
                   </button>
                 </div>
               </div> <!-- field -->
+              </form>
             </div>
           </div>
           <span class="help">seu email não será compartilhado</span>
