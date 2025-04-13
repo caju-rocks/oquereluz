@@ -59,7 +59,7 @@ textarea,
 }
 
 .newsletter div.card {
-  border: 1px solid var(--areia);
+  border: 1px solid var(--marrom);
   border-radius: 3rem;
   color: var(--areia);
 }
@@ -71,7 +71,7 @@ textarea,
 input.newsletter,
 input.newsletter::placeholder {
   border: none;
-  color: var(--areia);
+  color: var(--marrom);
 }
 
 input.newsletter:focus {
@@ -179,18 +179,18 @@ input.newsletter:focus {
 
 /* contact */
 label.contato {
-  color: var(--marrom);
+  color: var(--areia);
 }
 input.contato,
 textarea.contato {
-  border-bottom: 2px solid var(--marrom);
+  border-bottom: 2px solid var(--areia);
   border-radius: 0;
   box-shadow: none;
 }
 
 input.contato:focus,
 textarea.contato:focus {
-  border-bottom: 2px solid var(--marrom);
+  border-bottom: 2px solid var(--areia);
   box-shadow: none;
 }
 
