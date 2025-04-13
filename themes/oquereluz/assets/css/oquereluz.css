@@ -186,6 +186,7 @@ textarea.contato {
   border-bottom: 2px solid var(--areia);
   border-radius: 0;
   box-shadow: none;
+  color: var(--areia);
 }
 
 input.contato:focus,
@@ -201,12 +202,14 @@ textarea.contato:focus {
 }
 
 /* modal contact form success */
-#modal-contact-form-success .box {
+#modal-contact-form-success .box,
+#modal-newsletter-form-success .box {
   background-color: var(--amarelo);
   color: var(--marrom);
 }
 
-#modal-contact-form-success .box h3.subtitle {
+#modal-contact-form-success .box h3.subtitle,
+#modal-newsletter.box h3.subtitle {
   color: var(--marrom);
 }
 

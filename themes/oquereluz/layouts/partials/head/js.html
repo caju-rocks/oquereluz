@@ -24,31 +24,15 @@
   {{- end }}
 {{- end }}
 
-<!-- {{- with resources.Get "js/submit-newsletter.js" }} -->
-<!--   {{- if eq hugo.Environment "development" }} -->
-<!--     {{- with . | js.Build }} -->
-<!--       <script src="{{ .RelPermalink }}"></script> -->
-<!--     {{- end }} -->
-<!--   {{- else }} -->
-<!--     {{- $opts := dict "minify" true }} -->
-<!--     {{- with . | js.Build $opts | fingerprint }} -->
-<!--       <script src="{{ .RelPermalink }}" integrity="{{- .Data.Integrity }}" crossorigin="anonymous"></script> -->
-<!--     {{- end }} -->
-<!--   {{- end }} -->
-<!-- {{- end }} -->
-
-<script>
-  window.CustomSubstackWidget = {
-    substackUrl: "oquereluz.substack.com",
-    placeholder: "seu-email@gmail.com",
-    buttonText: "cadastrar",
-    theme: "custom",
-    colors: {
-      primary: "#E4D6B9",
-      input: "#E4D6B9",
-      email: "#4C2C1D",
-      text: "#4C2C1D",
-    },
-    // Go to substackapi.com to unlock custom redirect
-  };</script><script src="https://substackapi.com/widget.js" async></script>
-
+{{- with resources.Get "js/submit-newsletter.js" }}
+  {{- if eq hugo.Environment "development" }}
+    {{- with . | js.Build }}
+      <script src="{{ .RelPermalink }}"></script>
+    {{- end }}
+  {{- else }}
+    {{- $opts := dict "minify" true }}
+    {{- with . | js.Build $opts | fingerprint }}
+      <script src="{{ .RelPermalink }}" integrity="{{- .Data.Integrity }}" crossorigin="anonymous"></script>
+    {{- end }}
+  {{- end }}
+{{- end }}
