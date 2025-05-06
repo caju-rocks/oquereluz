@@ -7,3 +7,10 @@ pagination:
   pagerSize: 3
   path: page
 #path: blog
+  
+params:
+  contact:
+    email: contato@oquereluz.com.br
+    address: Fortaleza/CE
+  social:
+    instagram: oquereluz

@@ -11,15 +11,22 @@
         </div>
         <div class="column is-three-quarters">
           <ul class="footer-menu">
-            <li class="mb-2"><a class="has-text-weight-semibold" href="#">HOME</a></li>
-            <li class="mb-2"><a class="has-text-weight-semibold" href="#">SERVIÇOS</a></li>
-            <li class="mb-2"><a class="has-text-weight-semibold" href="#">SOBRE MIM</a></li>
-            <li class="mb-2"><a class="has-text-weight-semibold" href="#">NEWSLETTER</a></li>
-            <li class="mb-2"><a class="has-text-weight-semibold" href="#">CONTATO</a></li>
+            <li class="mb-2"><a class="has-text-weight-semibold" href="/">HOME</a></li>
+            <li class="mb-2"><a class="has-text-weight-semibold" href="#servicos">SERVIÇOS</a></li>
+            <li class="mb-2"><a class="has-text-weight-semibold" href="#sobre-mim">SOBRE MIM</a></li>
+            <li class="mb-2"><a class="has-text-weight-semibold" href="#newsletter">NEWSLETTER</a></li>
+            <li class="mb-2"><a class="has-text-weight-semibold" href="#contato">CONTATO</a></li>
           </ul>
         </div>
-        <div class="column">
-          <span>icones</span>
+        <div class="column has-text-right">
+            <a href="https://instagram.com/{{ .Site.Params.social.instagram }}" target="_blank" class="instagram is-large" style="border:none;">
+            <span class="icon">
+              <i class="fa-brands fa-instagram"></i>
+            </span>
+          </a>
+          <!-- <a href="#contato" class="substack" style="border:none;"> -->
+              <!-- <img src="{{ "substack-reader.svg" }}" /> -->
+          <!-- </a> -->
         </div>
       </div> <!-- footer columns -->
     </div>

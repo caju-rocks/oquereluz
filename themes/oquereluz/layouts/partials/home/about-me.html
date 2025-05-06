@@ -8,12 +8,13 @@
         <div class="column is-two-fifths sobre-mim">
           <div class="content is-shadowless">
             <p>{{ .Content }}</p>
-            <p>{{ .Date }}
-            <p>{{ .Params.description }}</p>
           </div>
         </div>
         <div class="column foto-sobre-mim is-flex is-align-items-right">
-          <img src="https://placehold.co/590x420">
+          {{ $image := .Resources.Get "images/about-me.jpg" }}
+          {{ with $image }}
+          <img src="{{ .RelPermalink }}">
+          {{ end }}
         </div>
       </div> <!-- columns -->
     </div>

@@ -292,3 +292,9 @@ textarea.contato:focus {
 .py-60 {
   padding: 60px 0;
 }
+
+/* icones */
+.instagram, .substack{
+  color: var(--areia);
+  font-size: 1.5rem;
+}
