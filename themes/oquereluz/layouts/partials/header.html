@@ -17,8 +17,8 @@
     </a>
   </div>
 
-  <div id="navbar-principal" class="navbar-menu">
-    <div class="navbar-end">
+  <div id="navbar-principal" class="navbar-menu mt-5">
+    <div class="navbar-end is-hidden-mobile">
       <a href="/" class="navbar-item is-size-5 mr-5 has-text-{{ $color }} has-text-weight-semibold">
         HOME
       </a>
@@ -33,6 +33,28 @@
       </a>
       <a href="#contato" class="navbar-item is-size-5 has-text-{{ $color }} has-text-weight-semibold">
         CONTATO
+      </a>
+    </div>
+    <div class="navbar-end is-hidden-tablet has-text-centered">
+      <a href="/" class="navbar-item is-size-6 has-text-vermelho has-text-weight-semibold">
+        HOME
+      </a>
+      <a href="#servicos" class="navbar-item is-size-6 has-text-vermelho has-text-weight-semibold">
+        SERVIÇOS
+      </a>
+      <a href="#sobre-mim" class="navbar-item is-size-6 has-text-vermelho has-text-weight-semibold">
+        SOBRE MIM
+      </a>
+      <a href="#newsletter" class="navbar-item is-size-6 has-text-vermelho has-text-weight-semibold">
+        NEWSLETTER
+      </a>
+      <a href="#contato" class="navbar-item is-size-6 has-text-vermelho has-text-weight-semibold">
+        CONTATO
+      </a>
+      <a href="https://instagram.com/{{ .Site.Params.social.instagram }}" target="_blank" class="instagram-vermelho is-large mt-4" style="border:none;">
+        <span class="icon">
+          <i class="fa-brands fa-instagram"></i>
+        </span>
       </a>
     </div>
   </div>

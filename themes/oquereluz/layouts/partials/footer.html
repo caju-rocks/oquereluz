@@ -5,11 +5,11 @@
 {{- end -}}
   <div class="hero-body" style="margin-bottom:6rem;">
     <div class="container">
-      <div class="columns">
-        <div class="column">
+      <div class="columns is-variable is-1 is-multiline is-mobile has-text-centered-mobile is-flex-direction-column-mobile">
+        <div class="column is-full-mobile is-oquereluz-one-third-tablet">
           {{ partial "logos/vertical-areia.html" }}
         </div>
-        <div class="column is-three-quarters">
+        <div class="column is-full-mobile is-three-quarters-tablet">
           <ul class="footer-menu">
             <li class="mb-2"><a class="has-text-weight-semibold" href="/">HOME</a></li>
             <li class="mb-2"><a class="has-text-weight-semibold" href="#servicos">SERVIÇOS</a></li>
@@ -18,7 +18,7 @@
             <li class="mb-2"><a class="has-text-weight-semibold" href="#contato">CONTATO</a></li>
           </ul>
         </div>
-        <div class="column has-text-right">
+        <div class="column is-full-mobile has-text-centered">
             <a href="https://instagram.com/{{ .Site.Params.social.instagram }}" target="_blank" class="instagram is-large" style="border:none;">
             <span class="icon">
               <i class="fa-brands fa-instagram"></i>

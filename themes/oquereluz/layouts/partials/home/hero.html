@@ -4,7 +4,10 @@
       <header class="py-5">
         {{ partial "header.html" . }}
       </header>
-      <div class="columns mt-6">
+      <div class="columns mt-3">
+        <!-- <div class="column is-flex is-hidden-tablet"> -->
+          <!-- {{ partial "logos/mobile-shape-top.html" }} -->
+        <!-- </div> -->
         <div class="column is-half is-flex is-flex-direction-column is-justify-content-center">
           <h1 class="title is-size-special">
             <span class="has-text-weight-bold">
@@ -16,7 +19,7 @@
               um mundo
             </span>
           </h1>
-          <div class="">
+          <div class="is-button-special">
             <a href="#contato" class="button is-rounded is-medium is-oquereluz-marrom has-font-work" style="border:none;">
               <span class="pr-2">escrevo as suas histórias</span>
               <span class="icon">
@@ -25,7 +28,7 @@
             </a>
           </div>
         </div> <!-- column -->
-        <div class="column is-flex is-justify-content-center">
+        <div class="column is-flex is-justify-content-center is-hidden-mobile">
           {{ partial "logos/shape-top.html" }}
         </div>
       </div> <!-- columns -->

@@ -42,6 +42,12 @@ textarea,
   line-height: 0.95em;
 }
 
+@media screen and (max-width: 768px) {
+  .is-size-special {
+    font-size: 4.0rem; /* tamanho reduzido para mobile */
+  }
+}
+
 .has-font-fira {
   font-family: var(--fira-font-family);
   font-weight: 300;
@@ -71,10 +77,12 @@ textarea,
 input.newsletter,
 input.newsletter::placeholder {
   border: none;
+  box-shadow: none;
   color: var(--marrom);
 }
 
 input.newsletter:focus {
+  border: none;
   box-shadow: none;
 }
 
@@ -144,6 +152,10 @@ input.newsletter:focus {
 
 .has-text-areia {
   color: var(--areia);
+}
+
+.has-text-vermelho {
+  color: var(--vermelho);
 }
 
 .has-background-areia {
@@ -296,5 +308,10 @@ textarea.contato:focus {
 /* icones */
 .instagram, .substack{
   color: var(--areia);
+  font-size: 1.5rem;
+}
+
+.instagram-vermelho{
+  color: var(--vermelho);
   font-size: 1.5rem;
 }
