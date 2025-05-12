@@ -1,7 +1,7 @@
 <section id="sobre-mim" class="hero is-oquereluz-amarelo">
   <div class="hero-body">
     <div class="container py-60">
-      <div class="columns">
+      <div class="columns is-vcentered">
         <div class="column is-one-quarter is-flex is-align-items-center">
           <h1 class="title is-size-1">{{ lower .Title }}</h1>
         </div> <!-- column -->
@@ -10,10 +10,10 @@
             <p>{{ .Content }}</p>
           </div>
         </div>
-        <div class="column foto-sobre-mim is-flex is-align-items-right">
+        <div class="column foto-sobre-mim is-inline-block">
           {{ $image := .Resources.Get "images/about-me.jpg" }}
           {{ with $image }}
-          <figure class="image is-2by3">
+          <figure class="image is-fullwidth">
             <img class="has-ratio" src="{{ .RelPermalink }}">
           </figure>
           {{ end }}
