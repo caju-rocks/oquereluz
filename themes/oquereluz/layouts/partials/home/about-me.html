@@ -13,7 +13,9 @@
         <div class="column foto-sobre-mim is-flex is-align-items-right">
           {{ $image := .Resources.Get "images/about-me.jpg" }}
           {{ with $image }}
-          <img src="{{ .RelPermalink }}">
+          <figure class="image is-2by3">
+            <img class="has-ratio" src="{{ .RelPermalink }}">
+          </figure>
           {{ end }}
         </div>
       </div> <!-- columns -->
