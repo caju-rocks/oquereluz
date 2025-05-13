@@ -1,7 +1,6 @@
 baseURL: https://oquereluz.netlify.app/
 languageCode: "pt-BR"
 title: "O Que Reluz"
-description: "A professora e jornalista Júlia Lopes, que tem 20 anos de experiência com texto, oferece serviço de ghostwriting, orientação de projeto acadêmico e criativo"
 theme: oquereluz
 
 pagination:
@@ -10,6 +9,7 @@ pagination:
 #path: blog
   
 params:
+  description: "A professora e jornalista Júlia Lopes, que tem 20 anos de experiência com texto, oferece serviço de ghostwriting, orientação de projeto acadêmico e criativo"
   contact:
     email: contato@oquereluz.com.br
     address: Fortaleza/CE

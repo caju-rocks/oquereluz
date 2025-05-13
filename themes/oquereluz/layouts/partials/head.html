@@ -1,5 +1,9 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="og:title" content="{{ site.Title }}" />
+<meta property="og:type" content="website" />
+<meta property="org:description" content="{{ if .Description }}{{ .Description }}{{ else }}{{ .Site.Params.Description }}{{ end }}">
+<meta property="og:url" content="{{ site.BaseURL }}" />
 <title>
   {{ if .IsHome }}
     {{ site.Title }}
