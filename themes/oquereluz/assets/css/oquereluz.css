@@ -184,6 +184,10 @@ input.newsletter:focus {
   color: var(--areia);
 }
 
+.navbar-burger-secondary {
+  color: var(--marinho);
+}
+
 /* newsletter */
 .field.has-addons {
   justify-content: center;

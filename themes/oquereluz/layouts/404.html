@@ -1,0 +1,24 @@
+{{- define "main" -}}
+
+{{ partial "404/hero.html" . }}
+
+<section class="hero is-fullheight">
+  <div class="hero-body">
+    <div class="container">
+      <div class="columns">
+        <div class="column">
+          <h1 class="title is-1">Página não encontrada</h1>
+        </div>
+      </div> <!-- columns -->
+      <div class="columns">
+        <div class="column">
+          <div class="content">
+            <p>Desculpe, essa página não existe mais.
+              <a href="{{ .Site.BaseURL }}">Clique aqui</a> para voltar a página inicial.</p>
+          </div>
+        </div>
+      </div> <!-- columns -->
+    </div>
+  </div>
+</section>
+{{- end }}
