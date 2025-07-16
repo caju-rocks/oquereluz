@@ -9,4 +9,6 @@ services:
       description: 'Faço acompanhamento do seu processo de escrita, com leitura implicada, comentários e exercícios para que você continue o seu próprio trabalho'
     - name: 'orientação de projeto'
       description: 'Quer voltar para a universidade, fazer mestrado ou doutorado, mas não sabe como fazer um projeto? Faço isso com você. Quer estruturar um projeto criativo? Faço isso junto com você, sugerindo ideias, insights e possibilidades de caminhos.'
+    - name: 'preparação de originais'
+      description: 'A preparação de originais garante que a sua obra esteja coerente do começo ao fim. É uma leitura integral, que procura por furos em relação a personagens, situações e argumentos. É a leitura implicada no prazer do texto'
 ---
